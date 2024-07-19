@@ -1,0 +1,243 @@
+.main {
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.heading {
+    font-size: 2.5em;
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+.form_div {
+    height: 76%;
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 1.5em;
+    display: flex;
+    gap: 5em;
+}
+
+.form {
+    width: 45%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 1.5em;
+
+    input {
+        width: 45%;
+        height: 3em;
+        padding-left: 2em;
+        border: 0.8px solid rgb(230, 224, 224);
+        border-radius: 0.5em;
+        color: black;
+        font-weight: 600;
+
+        &:focus {
+            outline: 3px solid #1976d2;
+        }
+
+    }
+
+    select {
+        width: 45%;
+        height: 3em;
+        padding-left: 2em;
+        border: 0.8px solid rgb(230, 224, 224);
+        border-radius: 0.5em;
+        font-weight: 600;
+
+        &:focus {
+            outline: 3px solid #1976d2;
+        }
+
+        option {
+            padding-left: 2em;
+            border: 0.8px solid rgb(230, 224, 224);
+            color: #333;
+            color: #333333;
+            /* Lighter black color */
+            background-color: rgb(245, 245, 245);
+            border-radius: 0.5em;
+            font-weight: 600;
+        }
+    }
+
+    .btn1 {
+        width: 35%;
+        height: 2.8em;
+        background-color: #1976d2;
+        color: white;
+        &hover{
+            color: white;
+            background-color: red;
+        }
+    }
+
+    textarea {
+        padding: 1em;
+        font-size: 1.2em;
+        border: 1px solid rgb(200, 199, 199);
+        border-radius: 0.5em;
+        &:focus {
+            outline: 2px solid #1976d2;
+        }
+    }
+
+    p {
+        color: rgb(141, 134, 134);
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.photo {
+    width: 50%;
+    height: 104.6%;
+
+    /* border: 1px solid red; */
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .main {
+        height: 105vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.5em;
+        /* border: 2px solid red; */
+    }
+    
+    .heading {
+        font-size: 2em;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7em;
+        height: 35vh;
+        /* border: 1px solid black; */
+        align-items: center;
+        justify-content: center;
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    }
+    
+    .form_div {
+        height: 73%;
+        /* border: 1px solid black; */
+        width: 100%;
+        padding: 0.2em;
+        display: flex;
+        gap: 0.5em;
+    }
+    
+    .form {
+        width: 40%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 0.2em;
+    
+        input {
+            width: 100%;
+            height: 2.6em;
+            padding-left: 2em;
+            border: 0.8px solid rgb(230, 224, 224);
+            border-radius: 0.5em;
+            color: black;
+            font-weight: 600;
+    
+            &:focus {
+                outline: 3px solid #1976d2;
+            }
+    
+        }
+    
+        select {
+            width: 100%;
+            height: 3em;
+            padding-left: 2em;
+            border: 0.8px solid rgb(230, 224, 224);
+            border-radius: 0.5em;
+            font-weight: 600;
+    
+            &:focus {
+                outline: 3px solid #1976d2;
+            }
+    
+            option {
+                padding-left: 2em;
+                border: 0.8px solid rgb(230, 224, 224);
+                color: #333;
+                color: #333333;
+                /* Lighter black color */
+                background-color: rgb(245, 245, 245);
+                border-radius: 0.5em;
+                font-weight: 600;
+            }
+        }
+    
+        .btn1 {
+            width: 100%;
+            height: 3em;
+            line-height: 1.2em;
+            background-color: #1976d2;
+            color: white;
+            &hover{
+                color: white;
+                background-color: red;
+            }
+        }
+    
+        textarea {
+            padding: 1em;
+            font-size: 1.2em;
+            border: 1px solid rgb(200, 199, 199);
+            border-radius: 0.5em;
+            width: 100%;
+            height: 6em;
+            &:focus {
+                outline: 2px solid #1976d2;
+            }
+        }
+    
+        p {
+            color: rgb(141, 134, 134);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-size: 0.7em;
+        }
+    }
+    
+    .photo {
+        width: 58%;
+        height: 100%;
+        /* border: 1px solid red; */
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

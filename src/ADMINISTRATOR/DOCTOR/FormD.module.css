@@ -1,0 +1,245 @@
+.main {
+    padding: 20px;
+    height: 90vh;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    gap: 3em;
+}
+
+.first_main {
+    width: 49%;
+    img {
+        width: 98%;
+        height: 100%;
+    }
+}
+
+.second_main {
+    border: 2px solid black;
+    width: 45%;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    gap: 1.5em;
+    /* justify-content: center; */
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    align-items: center;
+    justify-content: center;
+
+    .main_head {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .subhead {
+        font-size: 1em;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form_innerdiv {
+    width: 48%;
+}
+
+.form_innerdiv p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.3em;
+
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+
+    &::placeholder {
+        color: black;
+    }
+}
+
+.btn_div {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+        width: 6.3em;
+        height: 2.3em;
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+}
+
+.fetch_main {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+@media screen and (max-width : 500px) {
+    .main {
+        padding: 5px;
+        height: 90vh;
+        width: 100%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.1em;
+        flex-direction: column;
+        margin-top: 3em;
+    }
+
+    .first_main {
+        height: 10em;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .second_main {
+        width: 100%;
+        display: flex;
+        padding: 0.5em;
+        flex-direction: column;
+        gap: 1.5em;
+        /* justify-content: center; */
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+        align-items: center;
+        justify-content: center;
+
+        .main_head {
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .subhead {
+            font-size: 0.9em;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_div {
+        display: flex;
+        gap: 0.5em;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .form_innerdiv {
+        width: 100%;
+    }
+
+    .form_innerdiv p {
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 1.1em;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 0.4em;
+
+        &::placeholder {
+            color: black;
+        }
+    }
+
+    .btn_div {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            width: 6em;
+            height: 2em;
+            font-weight: 500;
+            font-size: 1.2em;
+        }
+    }
+    .data{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .fetch_main {
+        width: 100%;
+        overflow-x: auto;
+        box-sizing: border-box;
+        overflow-y: auto;
+    } */
+    table {
+        width: 100%; 
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        padding: 4px;
+        border: 1px solid #ddd;
+        text-align: left;
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    td{
+        font-size: 0.8em;
+        text-transform: capitalize;
+    }
+    th {
+        color: #f4f4f4;
+        font-family: Andale Mono, monospace;
+        font-size: 1em;
+        font-weight: 600;
+        font-weight: bold;
+        background-color: orange;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+        color: black;
+    }
+    
+    tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+
+
+}

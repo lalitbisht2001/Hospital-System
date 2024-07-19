@@ -1,0 +1,204 @@
+.main_heading {
+    height: 50vh;
+    margin-top: 8em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7em;
+    /* border: 2px solid black; */
+}
+
+.head {
+    color: black;
+    font-size: 3em;
+    font-weight: 600;
+    font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+}
+
+.para {
+    color: rgb(136, 125, 125);
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+    width: 60%;
+}
+
+/* This is a AboutHeading component */
+
+@media screen and (max-width : 600px) {
+    .main_heading {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6em;
+        /* border: 2px solid black; */
+    }
+
+    .head {
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-size: 1.6em;
+        font-weight: 600;
+        font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+    }
+
+    .para {
+        color: rgb(136, 125, 125);
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+        text-align: justify;
+        justify-content: center;
+        height: 10em;
+        width: 70%;
+    }
+}
+
+.main_hos {
+    height: calc(100vh - 50vh);
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+
+    h3 {
+        color: rgb(52, 52, 229);
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    height: 38vh;
+    /* border: 2px solid black; */
+    width: 20%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1.6em;
+    &:hover{
+        background-color: #E3F2FD;
+        .symbol{
+            border: none;
+        }
+    }
+}
+
+.symbol {
+    height: 6em;
+    border: 1px solid rgb(169, 163, 163);
+    width: 6em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        color: rgb(52, 52, 229);
+        font-size: 2em;
+    }
+
+    &:hover {
+        background-color: rgb(65, 95, 227);
+
+        .logo {
+            color: white;
+            background-color: rgb(65, 95, 227);
+            border: none;
+        }
+    }
+}
+
+.heading_logo {
+    font-size: 1.7em;
+}
+
+.about_hos {
+    text-align: center;
+    font-size: 1em;
+    color: rgb(104, 97, 97);
+}
+
+@media screen and (max-width : 600px) {
+    .main_hos {
+        height: 110vh;
+        width: 100%;
+        /* margin-top: 1em; */
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4em;
+
+        h3 {
+            color: rgb(52, 52, 229);
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        padding: 0.4em;
+        /* border: 2px solid black; */
+        width: 80%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        gap: 0.8em;
+        &:hover{
+            background-color: #E3F2FD;
+            .symbol{
+                border: none;
+            }
+        }
+    }
+
+    .symbol {
+        height: 3em;
+        border: 1px solid rgb(169, 163, 163);
+        width:  3em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        .logo {
+            color: rgb(52, 52, 229);
+            font-size: 1.2em;
+        }
+        &:hover {
+            background-color: rgb(65, 95, 227);
+            .logo {
+                color: white;
+                background-color: rgb(65, 95, 227);
+                border: none;
+            }
+        }
+    }
+
+    .heading_logo {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .about_hos {
+        text-align: center;
+        font-size: 0.9em;
+        color: rgb(104, 97, 97);
+    }
+}

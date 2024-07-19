@@ -1,0 +1,218 @@
+.main {
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.first_main {
+    margin-top: 4em;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    .head1 {
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 1.6em;
+        font-weight: 600;
+        font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+    }
+
+    .head2 {
+        color: rgb(118, 118, 118);
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    .img {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.second_main {
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5em;
+}
+
+.big_box {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* border: 1px solid yellow; */
+    width: 25%;
+
+    .photo {
+        height: 50%;
+        width: 100%;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+        }
+    }
+
+    .box {
+        height: 50%;
+        width: 100%;
+        padding: 0.7em;
+        display: flex;
+        flex-direction: column;
+        gap: 1.7em;
+
+        /* transition: all 0.4s ease-in-out; */
+        span {
+            background-color: #1976d2;
+            height: 2.3em;
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5em;
+            color: white;
+        }
+    }
+}
+
+.head1 {
+    font-size: 1.4em;
+}
+
+.head2 {
+    font-size: 0.9em;
+    color: rgb(129, 127, 127);
+}
+
+@media screen and (max-width : 500px) {
+    .main {
+        height: 210vh;
+        width: 100%;
+        margin-top: 1em;
+        display: flex;
+        gap: 0.5em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first_main {
+        margin-top: 1em;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid black; */
+        gap: 0.6em;
+
+        .head1 {
+            font-size: 2em;
+            text-align: center;
+            line-height: 1.3em;
+            font-weight: 600;
+            font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+        }
+
+        .head2 {
+            color: rgb(118, 118, 118);
+            text-align: center;
+            line-height: 1.3em;
+            font-size: 0.9em;
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .second_main {
+        width: 100%;
+        height: 180vh;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
+    }
+
+    .big_box {
+        display: flex;
+        flex-direction: column;
+        height: 55vh;
+        border-radius: 1em;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        /* border: 1px solid yellow; */
+        width: 80%;
+
+        .photo {
+            height: 50%;
+            width: 100%;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-top-left-radius: 1em;
+                border-top-right-radius: 1em;
+            }
+        }
+
+        .box {
+            height: 50%;
+            width: 100%;
+            padding: 0.7em;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            /* transition: all 0.4s ease-in-out; */
+            span {
+                background-color: #1976d2;
+                height: 2.3em;
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0.5em;
+                color: white;
+            }
+        }
+        .head1 {
+            font-size: 1.2em;
+        }
+    
+        .head2 {
+            font-size: 0.8em;
+            text-align: justify;
+            color: rgb(129, 127, 127);
+        }
+    }
+
+   
+
+}

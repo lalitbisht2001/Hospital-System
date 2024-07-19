@@ -1,0 +1,300 @@
+.main {
+    height: 145vh;
+    width: 100%;
+    margin-top: 5.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.first_main {
+    /* border: 2px solid red; */
+    margin-top: 1em;
+    width: 70%;
+    height: 30vh;
+    display: flex;
+    gap: 6em;
+    position: relative;
+}
+
+.logo {
+    height: 30vh;
+    width: 35%;
+}
+
+.para {
+    padding: 1em;
+    padding-left: 2.5em;
+}
+
+.para .p {
+    font-family: FreeMono, monospace;
+    font-size: 2em;
+    line-height: 1.4em;
+    font-weight: 540;
+}
+
+.name {
+    margin-top: 1em;
+    margin-left: 20em;
+}
+
+.second_main {
+    height: 110vh;
+    width: 55%;
+    position: relative;
+}
+
+.photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.form {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form p {
+    color: black;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.form_div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4em 4em;
+}
+
+.form_div:hover {
+    background-color: #e1f0fc;
+}
+
+.form_innerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6em;
+}
+
+.form_innerdiv input {
+    height: 3em;
+    border: none;
+    padding-left: 1em;
+    color: black;
+    font-size: 0.8em;
+    border: 1px solid rgb(176, 173, 173);
+    border-radius: 0.5em;
+    width: 21em;
+}
+
+.form_innerdiv input:focus {
+    outline: 2px solid #1976d2;
+    border: none;
+}
+
+.form_innerdiv input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.form_innerdiv select {
+    height: 3em;
+    border: none;
+    padding-left: 1em;
+    color: black;
+    font-size: 0.8em;
+    border: 1px solid rgb(176, 173, 173);
+    border-radius: 0.5em;
+    width: 21em;
+}
+
+.form_innerdiv select option {
+    color: black;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    background-color: blue;
+    color: white;
+}
+
+.btn_div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+@media screen and (max-width : 500px) {
+    .main {
+        height: 125vh;
+        width: 100%;
+        margin-top: 5.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid black; */
+    }
+
+    .first_main {
+        /* border: 2px solid red; */
+        margin-top: 1em;
+        width: 95%;
+        height: 25vh;
+        display: flex;
+        gap: 1em;
+        position: relative;
+
+        .logo {
+            height: 23vh;
+            width: 32%;
+        }
+
+        .para {
+            padding: 0.7em;
+            padding-left: 0.6em;
+
+            .p {
+                font-family: FreeMono, monospace;
+                font-size: 1.4em;
+                line-height: 1.2em;
+                font-weight: 540;
+                text-align: justify;
+            }
+
+            .name {
+                margin-top: 1em;
+                margin-left: 6.5em;
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    .second_main {
+        height: 90vh;
+        width: 95%;
+        position: relative;
+        border-radius: 0.9em;
+    }
+
+    .photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        background-color: whitesmoke;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        border-radius: 0.9em;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        /* border: 2px solid black; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.9em;
+        height:100%;
+        p {
+            color: black;
+            font-size: 1em;
+            font-weight: 500;
+        }
+    }
+
+    .form_div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em;
+        width: 95%;
+        /* border: 1px solid black; */
+    }
+
+    .form_div:hover {
+        background-color: #E3F2FD;
+    }
+
+    .form_innerdiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5em;
+        input {
+            height: 2.3em;
+            border: none;
+            padding-left: 1em;
+            color: black;
+            font-size: 0.8em;
+            border: 1px solid rgb(176, 173, 173);
+            border-radius: 0.5em;
+            width: 12em;
+        }
+        input[type="date"]{
+            height: 2.7em;
+        }
+    }
+
+    .form_innerdiv input:focus {
+        outline: 2px solid #1976d2;
+        border: none;
+    }
+
+    .form_innerdiv input::placeholder {
+        color: black;
+        opacity: 1;
+    }
+
+    .form_innerdiv select {
+        height:2.4em;
+        border: none;
+        padding-left: 1em;
+        color: black;
+        font-size: 0.8em;
+        border: 1px solid rgb(176, 173, 173);
+        border-radius: 0.5em;
+        width: 12em;
+    }
+
+    .form_innerdiv select option {
+        color: black;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        background-color: blue;
+        color: white;
+    }
+
+    .btn_div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

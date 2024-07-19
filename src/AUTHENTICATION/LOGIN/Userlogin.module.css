@@ -1,0 +1,174 @@
+.main {
+    width: 25em;
+    height: 26em;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 8em;
+    left: 7em;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.heading {
+    line-height: 1.7em;
+
+    .head1 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .head2 {
+        font-size: 0.8em;
+        color: rgb(123, 121, 121);
+    }
+}
+
+.patient_form {
+    height: 76%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    justify-content: center;
+
+    span {
+        font-size: 1.1em;
+    }
+
+    .error {
+        font-size: 0.9em;
+        color: red;
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+
+    input {
+        height: 2.6em;
+        width: 100%;
+        outline: none;
+        border: 1.5px solid rgb(168, 164, 164);
+        border-radius: 0.3em;
+        padding-left: 2em;
+        background-color: whitesmoke;
+    }
+}
+
+.btn1 {
+    height: 2.3em;
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.btn2 {
+    height: 2.3em;
+    font-size: 1.2em;
+    background-color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.login {
+    margin-top: 0.2em;
+    color: rgb(99, 96, 96);
+}
+
+@media screen and (max-width : 500px) {
+    .main {
+        /* border: 1px solid black; */
+        width: 19em;
+        height: 23em;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 8.5em;
+        left: 4em;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .heading {
+        line-height: 1.6em;
+
+        .head1 {
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+
+        .head2 {
+            font-size: 0.7em;
+            color: rgb(132, 102, 102);
+        }
+    }
+
+    .patient_form {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+        width: 100%;
+        justify-content: center;
+
+        span {
+            font-size: 1em;
+        }
+
+        .error {
+            font-size: 0.9em;
+            color: red;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+
+        input {
+            height: 2.3em;
+            width: 100%;
+            outline: none;
+            border: 1.5px solid rgb(168, 164, 164);
+            border-radius: 0.3em;
+            padding-left: 2em;
+            background-color: whitesmoke;
+        }
+    }
+
+    .btn1 {
+        height: 2em;
+        font-size: 1.1em;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 0.5em;
+        cursor: pointer;
+    }
+
+    .btn2 {
+        height: 2em;
+        font-size: 1.1em;
+        background-color: white;
+        border: none;
+        border-radius: 0.5em;
+        cursor: pointer;
+        border: 2px solid black;
+    }
+
+    .login {
+        font-size: 0.9em;
+        margin-top: 1.5em;
+        align-items: center;
+        color: rgb(99, 96, 96);
+    }
+}

@@ -1,0 +1,191 @@
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.main1 {
+    /* border: 1px solid black; */
+    height: 3.4em;
+    width: 80%;
+    p {
+        font-size: 2.5em;
+        font-weight: 600;
+        font-family: Verdana, sans-serif;
+        text-align: center;
+    }
+}
+ 
+.main2 {
+    width: 80%;
+    /* border: 2px solid red; */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 36vh;
+    width: 20%;
+    border-radius: 0.8em;
+    cursor: grab;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.box:hover {
+    transform: rotateY(180deg);
+}
+
+.form{
+    font-size: 4.5em;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backface-visibility: hidden;
+    border-radius: 0.8em;
+    span{
+        font-size: 1.3em;
+        font-family: Andale Mono, monospace;
+        text-align: center;
+    }
+}
+
+.front {
+    font-size: 1.5em;
+    color: rgb(21, 90, 9);
+    display: flex;
+    gap: 1.6em;
+}
+
+.back {
+    background-color: #2ecc71; 
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    padding-left: 1em;
+    align-items: start;
+    p{
+        font-size: 1.2em;
+        color: white;
+        display: flex;
+        gap: 0.9em;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .main {
+        height: 140vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+        box-sizing: border-box;
+        padding: 0%;
+    } 
+    .main1 {
+        height: 2.5em;
+        width: 80%;
+        p {
+            font-size: 1.6em;
+            font-weight: 600;
+            font-family: Verdana, sans-serif;
+            text-align: center;
+        }
+    }
+     
+    .main2 {
+        width: 85%;
+        /* border: 2px solid red; */
+        height: 140vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        margin-top: 1em;
+    }
+ 
+    .box {      
+        height: 26vh;
+        width: 45%;
+        border-radius: 0.8em;
+        cursor: grab;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+    .box:hover {
+        transform: rotateY(180deg);
+    } 
+    .form{
+        font-size: 2.3em;
+    }
+    
+    .front, .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        backface-visibility: hidden;
+        border-radius: 0.8em;
+        span{
+            font-size: 0.8em;
+            font-family: Andale Mono, monospace;
+            text-align: center;
+        }
+    }
+    
+    .front {
+        font-size: 1.5em;
+        color: rgb(21, 90, 9);
+        display: flex;
+        gap: 1.6em;
+    }
+    
+    .back {
+        background-color: #2ecc71; 
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        gap: 1.1em;
+        padding-left: 1em;
+        align-items: start;
+        p{
+            font-size: 0.8em;
+            color: white;
+            display: flex;
+            gap: 0.9em;
+            align-items: center;
+        }
+    }
+    .logo{
+        font-size: 0.7em;
+    }
+}

@@ -1,0 +1,92 @@
+
+.navbar{
+    height: 11vh;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.link{
+    display: flex;
+    gap: 2em;
+    margin: 0 4em;
+    cursor: pointer;
+    li:hover{
+        color: blue;
+    }
+    
+    .nav_link{
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+    }
+}
+.btn{
+    padding: 0.7em 2.5em;
+    border-radius: 0.4em;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    &:hover{
+        color: white;
+        background-color: red;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        height: 23vh;
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.7em;
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 350px) {
+    .navbar {
+        height: 23vh;
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.9em;
+    }
+    .link{
+        display: flex;
+        gap: 0.8em;
+        margin: 0 4em;
+        cursor: pointer;
+        font-size: 1em;
+        li:hover{
+            color: blue;
+        }
+        
+        .nav_link{
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+        }
+    }
+    .btn{
+        padding: 0.7em 2.5em;
+        border-radius: 0.4em;
+        height: 2.5em;
+        width: 7.4em;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        &:hover{
+            color: white;
+            background-color: red;
+            border: none;
+        }
+    }
+}
+
