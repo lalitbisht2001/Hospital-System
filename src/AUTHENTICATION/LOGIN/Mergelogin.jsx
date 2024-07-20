@@ -8,13 +8,8 @@ import Userlogin from "./Userlogin";
 function Mergelogin() {
     const [isDoctorLogin, setIsDoctorLogin] = useState(true);
 
-    const handlePatientChange = () => {
-        setIsDoctorLogin(false);
-    };
-
-    const handleDoctorChange = () => {
-        setIsDoctorLogin(true);
-    };
+    const handlePatientChange = () => setIsDoctorLogin(false);
+    const handleDoctorChange = () => setIsDoctorLogin(true);
 
     return (
         <Box>
@@ -38,28 +33,20 @@ export default Mergelogin;
 
 const Box = styled.div`
     box-sizing: border-box;
-    margin: 0%;
+    margin: 0;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#42A5F5;
-    @media screen and (max-width : 500px) {
-        width: 100%;
-        height: 100vh;
+    background-color: #42A5F5;
+
+    @media screen and (max-width: 500px) {
         background-color: #42A5F5;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-    @media screen and (max-width : 300px) {
-        width: 100%;
-        height: 100vh;
+    
+    @media screen and (max-width: 300px) {
         background-color: red;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 `;
 
@@ -69,29 +56,30 @@ const Login = styled.div`
     border-radius: 0.8em;
     position: relative;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    
+
     img {
         height: 85vh;
         width: 100%;
-        border-radius: 0.8em;      
+        border-radius: 0.8em;
     }
 
-    @media screen and (max-width : 500px){
+    @media screen and (max-width: 500px) {
         height: 100%;
         width: 100%;
-        position: relative;
-        border-radius: 0%;
-        img{
+        border-radius: 0;
+        
+        img {
             width: 100%;
             height: 100%;
-            border-radius: 0%;
+            border-radius: 0;
         }
     }
-    @media screen and (max-width: 340px){
+
+    @media screen and (max-width: 340px) {
         height: 100vh;
         width: 85%;
-        position: relative;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
         }
@@ -113,63 +101,40 @@ const SmallBox = styled.div.withConfig({
     justify-content: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 0.9em;
-    
+
     div {
         width: 80%;
-        height: 3.7em;
-        border-radius: 0.9em;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         button {
             height: 75%;
             width: 80%;
         }
     }
-    
+
     .patient {
         background-color: ${props => !props.isDoctorLogin ? "lightgreen" : "transparent"};
     }
-    
+
     .doctor {
         background-color: ${props => props.isDoctorLogin ? "lightgreen" : "transparent"};
     }
 
-
-    @media screen and (max-width : 500px) {
-    position: absolute;
-    top: 5em;
-    left: 4em;
-    width: 19em;
-    background-color: white;
-    height: 3em;
-    display: flex;
-    gap: 0.5em;
-    align-items: center;
-    justify-content: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    /* border-radius: 0.9em; */
-    
-    div {
-        width: 80%;
+    @media screen and (max-width: 500px) {
+        top: 5em;
+        left: 4em;
+        width: 19em;
         height: 3em;
-        border-radius: 0.9em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        button {
-            height: 55%;
-            width: 80%;
+
+        div {
+            height: 100%;
+
+            button {
+                height: 55%;
+            }
         }
-    }
-    .patient {
-        background-color: ${props => !props.isDoctorLogin ? "lightgreen" : "transparent"};
-    }
-    
-    .doctor {
-        background-color: ${props => props.isDoctorLogin ? "lightgreen" : "transparent"};
-    }
     }
 `;
