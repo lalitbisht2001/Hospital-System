@@ -1,14 +1,14 @@
 {
-  "homepage" : "https://github.com/lalitbisht2001/Hospital-Management-System/",
+  "homepage": "https://github.com/lalitbisht2001/Hospital-Website/",
   "name": "hospital",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "vite build",
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d dist",
-    "dev": "vite",   
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",   
+    "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
