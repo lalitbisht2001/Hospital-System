@@ -5,7 +5,7 @@ import postcssPresetEnv from 'postcss-preset-env';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Hospiatl-System/',
+  base: '/Hospital-System/',
   plugins: [react()],
   build: {
     rollupOptions: {
