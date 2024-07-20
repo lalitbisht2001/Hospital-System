@@ -5,7 +5,7 @@ import postcssPresetEnv from 'postcss-preset-env';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Hospital-Website/',
+  base: '/Hospital-System/',
   plugins: [react()],
   build: {
     rollupOptions: {
@@ -20,8 +20,8 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        postcssNested, // Handles CSS nesting
-        postcssPresetEnv // Provides modern CSS features
+        postcssNested, 
+        postcssPresetEnv 
       ]
     }
   }
